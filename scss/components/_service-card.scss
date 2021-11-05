@@ -1,0 +1,43 @@
+@use "../base" as *;
+
+.services {
+  display: grid;
+  .service-cards {
+    display: grid;
+    gap: 2.4em;
+  }
+}
+.service-card {
+  .service-text {
+    align-self: center;
+    border-radius: 0 0 0.4em 0.4em;
+    background-color: $service-color;
+    padding: 2.2rem 4.8rem 4.8rem;
+    h3 {
+      font-size: 0.75em;
+    }
+  }
+  .service-image {
+    // Make the container fit image
+    display: flex;
+    border-collapse: separate;
+    position: relative;
+  }
+  .service-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #221ee9;
+    top: 0;
+    left: 0;
+    opacity: 0.15;
+    border-radius: 0.4em 0.4em 0 0;
+  }
+
+  img {
+    border-radius: 0.4em 0.4em 0 0;
+
+    width: 100%;
+  }
+}

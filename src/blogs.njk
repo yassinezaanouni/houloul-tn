@@ -1,0 +1,59 @@
+---
+title: Houloul - Your Buisness Solutions
+layout: "base.njk"
+---
+
+<section class="blogs-page">
+  <h1>Recent Articles</h1>
+  <ul role="list" class="articles-list">
+    {%- for post in collections.post | reverse -%}
+    <li>
+      <article class="snippet">
+        <div class="snippet-img">
+          <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" />
+        </div>
+        <div class="snippet-content">
+          <h3 class="snippet-title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h3>
+          <p class="snippet-meta">
+            by<span>{{ post.data.author }}</span
+            >{{ post.data.date | postDate }}
+          </p>
+          <p class="snippet-body">{{ post.data.description }}</p>
+          <div class="read">
+            <a href="{{ post.url }}">Continue reading</a
+            ><ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </article>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<!-- 
+<ul class="articles-list">
+  <li>
+    <article class="blog">
+      <div class="blog-img">
+        <img src="/assets/imgs/service1.jpg" alt="" />
+      </div>
+      <div class="blog-text">
+        <h2>What is CRM?</h2>
+        <p class="blog-date">Sep 23</p>
+
+        <p class="blog-desc">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque harum, autem, fuga saepe totam tempore praesentium tenetur
+          iste repellendus lauda minima maiores ex minus vero rem.
+        </p>
+        <div class="read">
+          <a href="/blog1/">Continue reading</a
+          ><ion-icon class="icon" name="caret-forward-outline"></ion-icon>
+        </div>
+      </div>
+    </article>
+  </li>
+
+</ul> -->

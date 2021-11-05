@@ -1,0 +1,576 @@
+@use "../base" as *;
+@use "../components/nav" as *;
+@use "../components/buttons" as *;
+@use "../components/card" as *;
+@use "../components/service-card" as *;
+@use "../components/top-blogs" as *;
+
+/************ Animation *****************/
+
+@media (min-width: 50em) {
+  .animation {
+    background-image: url("/assets/imgs/mail.svg");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: center center;
+    width: 6rem;
+    height: 6rem;
+    background-color: $primary-color;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    z-index: 99;
+    transform: translateY(-100vh);
+
+    box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.1);
+  }
+  .cta-animation {
+    opacity: 1;
+
+    bottom: 1.4rem;
+    transform: translateX(82vw);
+
+    transition: transform 800ms, opacity 800ms ease-out;
+  }
+
+  // .cta-animation {
+  //   min-width: unset;
+  //   font-size: 0rem !important;
+  //   background-image: url("/../../assets/imgs/mail.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: 3rem;
+  //   background-position: center center;
+  //   width: 6rem;
+  //   height: 6rem;
+  //   background-color: $primary-color;
+  //   border-radius: 50%;
+  //   position: fixed;
+  //   bottom: 1.8rem;
+  //   right: 3.2rem;
+  //   z-index: 99;
+  //   box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.1);
+  // }
+}
+/**************************************/
+
+.hero-img svg {
+  height: max(100vh, 40rem);
+}
+
+.img-container {
+  content: "";
+  background-image: url("/assets/imgs/values-background.webp");
+  background-size: cover;
+  background-position: top right;
+}
+//   * {
+//     z-index: 999;
+//   }
+// }
+// .img-container::after {
+//   content: "";
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(170, 93, 30, 0.993);
+//   position: absolute;
+//   top: 0px;
+// }
+
+.hero-img {
+  position: absolute;
+  top: -2rem;
+  opacity: 0.5;
+  right: -24rem;
+}
+.primary-heading {
+  font-weight: normal;
+  span {
+    font-weight: bold;
+  }
+}
+.hero-p {
+  color: #d5dcee;
+  font-size: 1.4rem;
+}
+
+/***********************/
+/*Values Section*/
+/***********************/
+.values-section {
+  h2 {
+    display: inline;
+    font-weight: normal;
+    span {
+      border-bottom: 1.5px solid $primary-color;
+      &:first-child {
+        color: $primary-color;
+      }
+      &::after {
+        position: unset;
+      }
+    }
+  }
+}
+
+.who-are-we {
+  font-size: 1.4rem;
+
+  li {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  margin-top: 3.6rem;
+
+  .left ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2em;
+    margin: 0 0 1.4rem 0;
+
+    .active {
+      a {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/************************/
+/*Contact*/
+/************************/
+.contact {
+  background: linear-gradient(180deg, white 80%, $bg2-color 20%);
+
+  font-weight: 600;
+  .white-contact {
+    margin: 0 auto;
+  }
+  .contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    label {
+      margin: 0em 0 0.15em 0;
+    }
+    .form-input {
+      margin: 0em 0 2em 0;
+      background-color: $bg2-color;
+      border: none;
+    }
+    .name-email {
+      padding: 0.8em;
+    }
+    textarea {
+      resize: none;
+    }
+    .submit {
+      margin-top: 1.8rem;
+      padding: 1em 0;
+
+      color: white;
+    }
+    position: relative;
+  }
+
+  .right {
+    margin-left: -13%;
+    margin-right: -13%;
+    background-color: $bg2-color;
+    margin-top: 1.8em;
+    padding: 1.6em;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.8em;
+    gap: 1.8rem;
+  }
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+    p {
+      display: inline-block;
+      margin: unset;
+    }
+  }
+}
+
+/******************/
+/* Footer */
+/******************/
+footer {
+  max-height: 36rem;
+  background-color: $bg-color;
+  * {
+    color: white;
+  }
+  p,
+  a {
+    font-size: 1.4rem;
+    margin-top: 0.4rem;
+  }
+  h6 {
+    margin-top: 2.2rem;
+  }
+
+  .footer4 {
+    span {
+      color: #a7acbb;
+      display: block;
+      font-size: 0.8rem;
+      letter-spacing: 1.2px;
+    }
+  }
+  .newsletter-input {
+    font-size: initial;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-top: 0.3em;
+    border-radius: 2rem;
+
+    button {
+      outline: none;
+      border: none;
+      border-radius: 0 2rem 2rem 0;
+      background-color: white;
+      padding-left: 0.8em;
+      padding-right: 0.8em;
+      .icon {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .email-icon {
+    font-size: 0rem !important;
+    .icon {
+      margin-top: 0.1em;
+
+      padding-left: 1rem;
+      padding-right: 0.15rem;
+      font-size: 1.4rem;
+      color: $primary-color;
+    }
+  }
+
+  input {
+    color: black;
+    outline: none;
+    border: none;
+    padding: 0.2em;
+    &::placeholder {
+      opacity: 0.6;
+      color: #a7acbb;
+    }
+  }
+
+  .social-icons {
+    margin-top: 0.6rem;
+    gap: 1.2rem;
+
+    .iconify-social {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  .mobile-nav-button {
+    display: none;
+  }
+  body {
+    text-align: left;
+    font-size: 2.4rem;
+  }
+
+  // Logo and everything in hero will adapt to font-size
+
+  .hero {
+    .primary-heading {
+      line-height: 1.2;
+    }
+    .hero-content {
+      margin-top: 18rem;
+
+      width: 20em;
+      .hero-p {
+        line-height: 1.8;
+      }
+      .hero-buttons {
+        flex-direction: unset;
+        justify-content: unset;
+        gap: 3.4rem;
+      }
+    }
+  }
+  .hero-img {
+    opacity: 0.7;
+  }
+
+  .who-are-we {
+    font-size: 1.6rem;
+    margin-top: 6.4rem;
+
+    display: flex;
+    justify-content: space-between;
+    .left ul {
+      text-align: center;
+      font-size: 1.4rem;
+      align-items: center;
+      li {
+        padding: 2.8em 1.2em;
+        border-radius: 0.6em;
+      }
+      .active {
+        background-color: $primary-color;
+        a {
+          font-weight: 500;
+
+          color: white;
+        }
+      }
+    }
+    .right {
+      flex-basis: 50%;
+    }
+  }
+  .services {
+    .service-card {
+      display: flex;
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+        .service-image {
+          border-radius: 0 0.4em 0.4em 0;
+        }
+        .service-text {
+          border-radius: 0.4em 0 0 0.4em;
+        }
+      }
+
+      .service-text {
+        border-radius: 0 0.4em 0.4em 0;
+      }
+      .service-image {
+        max-width: 35%;
+        width: auto;
+        height: auto;
+        border-radius: 0.5em 0 0 0.5em;
+        overflow: hidden;
+        img,
+        &::after {
+          border-radius: unset;
+        }
+      }
+    }
+  }
+  .contact {
+    background: linear-gradient(90deg, white 55%, $bg2-color 45%);
+    .contact-form {
+      .name-email {
+        padding: 1em;
+      }
+    }
+  }
+  .white-contact {
+    display: flex;
+    justify-content: space-between;
+    .about {
+      gap: 1.5em;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 4em;
+      padding-right: unset;
+      padding-bottom: unset;
+      background-color: unset;
+      margin: 0;
+      width: 40%;
+      position: unset;
+      justify-content: center;
+      p {
+        margin: 0;
+      }
+      .about-container,
+      .social-icons {
+        align-items: center;
+        justify-content: unset;
+      }
+      .social-icons {
+        margin-top: auto;
+      }
+    }
+  }
+  footer {
+    .footer-container {
+      text-align: center;
+      display: grid;
+      justify-content: space-between;
+      column-gap: 3.2rem;
+      grid-template-columns: repeat(3, 1fr);
+      h6,
+      h5 {
+        margin: 0;
+        margin-bottom: 1.8rem;
+      }
+      .footer3 {
+        li {
+          font-size: 0rem;
+        }
+      }
+      .footer4 {
+        grid-column: 1/-1;
+        .newsletter-input input {
+          padding: 0.8em 2em 0.8em 0.2em;
+        }
+
+        h6 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 68em) {
+  body {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+  .cta {
+    font-size: 1.7rem;
+    padding: 0.7em 2.4em;
+  }
+  .who-are-we {
+    .left ul {
+      gap: 2.4em;
+    }
+  }
+  .contact {
+    label {
+      font-size: 2.4rem;
+    }
+    .contact-form {
+      .name-email {
+        padding: 1.1em;
+      }
+    }
+  }
+  footer {
+    .footer-container {
+      text-align: left;
+      display: grid;
+      column-gap: 3.2rem;
+      grid-template-columns: repeat(4, 1fr);
+      .footer4 {
+        grid-column: unset;
+        .social-icons {
+          justify-content: unset;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 87.5em) {
+  body {
+    font-size: 3.4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    opacity: 1;
+    right: -20rem;
+  }
+  .cta {
+    padding: 0.7em 4.8em;
+  }
+
+  .hero-content {
+    width: 17em;
+  }
+  .who-are-we {
+    margin-top: 8.4rem;
+
+    .left ul {
+      li {
+        font-size: 1.5rem;
+      }
+    }
+    .right {
+      font-size: 1.8rem;
+      flex-basis: 60%;
+    }
+  }
+  .service-cards {
+    gap: 12rem !important;
+  }
+  .service-card {
+    .service-text {
+      padding: 4.8rem 12rem;
+      min-height: 85%;
+    }
+    .service-image {
+      border-radius: 0.5em !important;
+    }
+  }
+  .contact {
+    .contact-form {
+      .name-email {
+        padding: 1.2em;
+      }
+    }
+  }
+  .logo img {
+    width: 3.6em;
+    height: 2.4em;
+  }
+}
+@media (min-width: 100em) {
+  body {
+    font-size: 3.8rem;
+  }
+
+  .hero-img {
+    right: -6rem;
+  }
+  .contact {
+    .contact-form {
+      .name-email {
+        padding: 1.3em;
+      }
+    }
+  }
+  .cta-animation {
+    opacity: 1;
+
+    transform: translateX(85vw);
+  }
+}
+@media (min-width: 105em) {
+  .hero {
+    position: relative;
+  }
+  .hero-img {
+    //top: -26rem;
+    top: -30rem;
+    right: -22rem;
+  }
+}

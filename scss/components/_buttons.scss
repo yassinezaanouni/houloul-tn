@@ -1,0 +1,50 @@
+@use "../base" as *;
+
+button,
+.submit {
+  cursor: pointer;
+  border: none;
+  padding: 0.7em 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 0.25em;
+}
+.main-nav-button {
+  padding: 0.7rem 2rem;
+  font-size: 0.8em;
+}
+.hero-buttons {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta,
+.submit {
+  min-width: 15rem;
+}
+.hero-primary-cta,
+.submit {
+  background-color: $primary-color;
+}
+.hero-secondary-cta {
+  color: $primary-color;
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-width: 12rem;
+  background-color: $primary-color;
+  font-weight: normal;
+  margin-top: 1.2rem;
+  .explore-arrow {
+    color: white;
+  }
+  a {
+    color: white;
+  }
+}

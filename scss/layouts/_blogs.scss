@@ -1,0 +1,66 @@
+@use "../base" as *;
+@use "../components/nav" as *;
+@use "../components/buttons" as *;
+
+$date-color: #8f8f99;
+
+.blogs-page {
+  width: min(80%, 1450px);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 6.4rem 0;
+  .snippet-content {
+    .read {
+      font-size: 2.4rem;
+    }
+  }
+  .snippet-img {
+    img {
+      border-radius: 0.25em;
+      width: 100%;
+    }
+  }
+  .articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .snippet-meta {
+    margin: 0;
+  }
+  .read {
+    margin: 1.6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      border-bottom: 1px solid $primary-color;
+    }
+    .icon {
+      color: $primary-color;
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  .blogs-page {
+    gap: 3.2em;
+  }
+  .snippet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4em;
+    .snippet-img {
+      flex: 0.75;
+    }
+    .snippet-content {
+      flex: 1;
+    }
+    .read {
+      justify-content: unset;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@use "../base" as *;
+
+.values {
+  margin-top: 7.4rem;
+  gap: 1.2em;
+  row-gap: 3.2rem;
+
+  .values-container {
+    grid-column: 1/-1;
+  }
+}
+.values-container {
+  background-color: $bg2-color;
+  box-shadow: 8px 8px 50px rgba(0, 0, 0, 0.05);
+  padding: 4.4rem 1.6em;
+  border-radius: 0.25em;
+  position: relative;
+  h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+  }
+  .value-icon {
+    color: $primary-color;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 50em) {
+  .values {
+    grid-template-columns: repeat(3, 1fr);
+    .values-container {
+      grid-column: span 1;
+    }
+    .value-icon {
+      left: 5rem;
+    }
+  }
+}
+@media (min-width: 87.5em) {
+  .values {
+    .values-container {
+      box-shadow: 3px 6px 20px hsla(214, 67%, 18%, 0.082);
+    }
+  }
+}
