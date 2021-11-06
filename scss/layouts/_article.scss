@@ -32,7 +32,6 @@ $date-color: #8f8f99;
   width: min(80%, 1450px);
   margin: 0 auto;
   padding: 2em 0;
-  padding-right: 3.6em;
   h4 {
     margin-top: 1.4em;
   }
@@ -45,6 +44,8 @@ $date-color: #8f8f99;
 }
 @media (min-width: 50em) {
   .main-company {
+    padding-right: 3.6em;
+
     .main-article {
       text-align: justify;
     }

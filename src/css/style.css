@@ -1058,7 +1058,6 @@ footer .footer-container h5 {
   width: min(80%, 1450px);
   margin: 0 auto;
   padding: 2em 0;
-  padding-right: 3.6em;
 }
 .main-company h4 {
   margin-top: 1.4em;
@@ -1071,6 +1070,9 @@ footer .footer-container h5 {
 }
 
 @media (min-width: 50em) {
+  .main-company {
+    padding-right: 3.6em;
+  }
   .main-company .main-article {
     text-align: justify;
   }
