@@ -1070,8 +1070,11 @@ footer .footer-container h5 {
 }
 
 @media (min-width: 50em) {
-  .main-company {
+  .main-article {
     transform: translateY(max(-25%, -30rem));
+  }
+
+  .main-company {
     padding-right: 3.6em;
   }
   .main-company .main-article {
