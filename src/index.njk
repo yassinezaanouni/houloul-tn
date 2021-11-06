@@ -16,9 +16,9 @@ layout: 'base.njk'
           trist aliquetor trist aliquet dolor trist.
         </p>
         <div class="hero-buttons">
-          <button class="cta hero-primary-cta " ><a href="#contact" >Contactez-nous</a> </button>
-          <button class="animation" onclick="location.href='#contact';"></button>
-          <button class="cta hero-secondary-cta"><a href="#values"style="color: #225aa3">Decouvrez plus</a> </button>
+          <button class="cta hero-primary-cta " aria-label="Contact"><a href="#contact" >Contactez-nous</a> </button>
+          <button class="animation" onclick="location.href='#contact';" aria-label="Contact"></button>
+          <button class="cta hero-secondary-cta"><a href="#values" aria-label="Decouvrez plus" style="color: #225aa3">Decouvrez plus</a> </button>
         </div>
       </div>
       <div class="hero-img">
@@ -253,10 +253,10 @@ layout: 'base.njk'
           <div class="who-are-we">
             <div class="left">
               <ul class="">
-                <li class="adn active"><a href="/company/">Historique</a></li>
-                <li class="adn "><a href="/company/">ADN</a></li>
-                <li class="adn "><a href="/company/">Intevention</a></li>
-                <li class="adn "><a href="/company/">Ambition</a></li>
+                <li class="adn active" aria-label="Société"><a href="/company/">Historique</a></li>
+                <li class="adn " aria-label="Société"><a href="/company/">ADN</a></li>
+                <li class="adn " aria-label="Société"><a href="/company/">Intevention</a></li>
+                <li class="adn " aria-label="Société"><a href="/company/">Ambition</a></li>
               </ul>
             </div>
             <div class="right">
@@ -265,7 +265,7 @@ layout: 'base.njk'
                 Ces compétences sont renforcées par des études supérieures approfondies et diverses dans des universités renommées à l’échelle internationale et des expériences professionnelles multi-sectorielles à l’échelle mondiale.
               </p>
 
-              <button class="explore-btn">
+              <button class="explore-btn" aria-label="Decouvrez plus">
                 <a href="/company/">Explore</a
                 ><ion-icon
                   class="explore-arrow"
@@ -359,7 +359,7 @@ layout: 'base.njk'
       <section class="top-blogs" id="blogs">
         <h2><span>Notre </span>Blogs</h2>
         <div class="blogs-container">
-          <div class="blog blog1" onclick="location.href='https://www.google.com/';">
+          <div class="blog blog1" aria-label="blog" onclick="location.href='/blog/2021-11-06-effet-pop-corn/';">
             <div class="blog-text">
               <h3>Qu'est ce qu'un CRM?</h3>
               <p>
@@ -371,7 +371,7 @@ layout: 'base.njk'
             </div>
           </div>
 
-          <div class="blog blog2">
+          <div class="blog blog2" aria-label="blog" onclick="location.href='/blog/2021-11-06-effet-pop-corn/';">
 <div class="blog-text">
             <h3>Effet PoP CoRn .... !</h3>
             <p>
@@ -379,7 +379,7 @@ layout: 'base.njk'
             </p>
           </div>
           </div>
-          <div class="blog blog3">
+          <div class="blog blog3" aria-label="blog" onclick="location.href='/blog/2021-11-06-effet-pop-corn/';">
             <div class="blog-text">
             <h3>What is the first rule to sales?</h3>
             <p>
@@ -403,7 +403,7 @@ layout: 'base.njk'
 
             <label for="message">Message</label>
             <textarea name="message"  class="message  form-input"id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Contact" class="submit">
+            <input type="submit" value="Contact" class="submit" aria-label="submit">
             </form>
           </div>
         <div class="right">
@@ -428,9 +428,9 @@ layout: 'base.njk'
            
         </div>
         <div class="social-icons">
-          <span class="iconify iconify-social" data-icon="entypo-social:linkedin-with-circle"></span>
-          <span class="iconify iconify-social" data-icon="akar-icons:facebook-fill"></span>
-          <span class="iconify iconify-social" data-icon="ant-design:instagram-filled"></span>
+          <span class="iconify iconify-social" data-icon="entypo-social:linkedin-with-circle"  aria-label="linkedin page" onclick="location.href='https://www.facebook.com/houloultn';"></span>
+          <span class="iconify iconify-social" data-icon="akar-icons:facebook-fill" aria-label="facebook page" onclick="location.href='https://www.facebook.com/houloultn';"></span>
+          <span class="iconify iconify-social" data-icon="ant-design:instagram-filled" aria-label="instagram page" onclick="location.href='https://www.linkedin.com/company/houloul/';"></span>
         </div>
       </div>
       </section>

@@ -1,16 +1,16 @@
  <header class="main-header">
       <div class="logo" onclick="location.href='/';"><img src="/assets/imgs/houloul.svg" alt="" /></div>
       <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li class="main-nav-link"><a href="/">Acceuil</a></li>
-          <li class="main-nav-link"><a href="/#services">Services</a></li>
-          <li class="main-nav-link"><a href="/blogs/">Solutions</a></li>
-          <li class="main-nav-link"><a href="/company/">Société</a></li>
-          <li><button class="main-nav-button"> <a href="/#contact" style="color: #225aa3" >Contactez-nous</a> </button></li>
+        <ul class="main-nav-list" role="menu">
+          <li class="main-nav-link" aria-label="acceuil"><a href="/">Acceuil</a></li>
+          <li class="main-nav-link" aria-label="services"><a href="/#services">Services</a></li>
+          <li class="main-nav-link" aria-label="solutions"><a href="/blogs/">Solutions</a></li>
+          <li class="main-nav-link" aria-label="Société"><a href="/company/">Société</a></li>
+          <li><button class="main-nav-button" aria-label="menu"> <a href="/#contact" style="color: #225aa3" >Contactez-nous</a> </button></li>
         </ul>
       </nav>
       <button class="mobile-nav-button">
-        <ion-icon class="mobile-menu" name="menu-outline"></ion-icon>
-        <ion-icon class="mobile-menu" name="close-outline"></ion-icon>
+        <ion-icon class="mobile-menu" name="menu-outline" aria-label="open"></ion-icon>
+        <ion-icon class="mobile-menu" name="close-outline" aria-label="close" ></ion-icon>
       </button>
     </header>

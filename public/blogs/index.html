@@ -21,17 +21,17 @@
      <header class="main-header">
       <div class="logo" onclick="location.href='/';"><img src="/assets/imgs/houloul.svg" alt="" /></div>
       <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li class="main-nav-link"><a href="/">Acceuil</a></li>
-          <li class="main-nav-link"><a href="/#services">Services</a></li>
-          <li class="main-nav-link"><a href="/blogs/">Solutions</a></li>
-          <li class="main-nav-link"><a href="/company/">Société</a></li>
-          <li><button class="main-nav-button"> <a href="/#contact" style="color: #225aa3" >Contactez-nous</a> </button></li>
+        <ul class="main-nav-list" role="menu">
+          <li class="main-nav-link" aria-label="acceuil"><a href="/">Acceuil</a></li>
+          <li class="main-nav-link" aria-label="services"><a href="/#services">Services</a></li>
+          <li class="main-nav-link" aria-label="solutions"><a href="/blogs/">Solutions</a></li>
+          <li class="main-nav-link" aria-label="Société"><a href="/company/">Société</a></li>
+          <li><button class="main-nav-button" aria-label="menu"> <a href="/#contact" style="color: #225aa3" >Contactez-nous</a> </button></li>
         </ul>
       </nav>
       <button class="mobile-nav-button">
-        <ion-icon class="mobile-menu" name="menu-outline"></ion-icon>
-        <ion-icon class="mobile-menu" name="close-outline"></ion-icon>
+        <ion-icon class="mobile-menu" name="menu-outline" aria-label="open"></ion-icon>
+        <ion-icon class="mobile-menu" name="close-outline" aria-label="close" ></ion-icon>
       </button>
     </header>
     <main>
@@ -123,9 +123,9 @@
         </div>
         <div class="footer3"><h6>Blogs</h6>
         <ul>
-          <li><a href="#"> What is CRM is CRM is CRM?</a></li>
-          <li><a href="#"> Popcorn Effect</a></li>
-          <li><a href="#"> What is CRM?</a></li>
+          <li><a href="/blog/2021-11-06-effet-pop-corn/" aria-label="blog"> What is CRM is CRM is CRM?</a></li>
+          <li><a href="/blog/2021-11-06-effet-pop-corn/" aria-label="blog"> Popcorn Effect</a></li>
+          <li><a href="/blog/2021-11-06-effet-pop-corn/" aria-label="blog"> What is CRM?</a></li>
         </ul>
         </div>
         <div class="footer4">
@@ -136,7 +136,7 @@
               <div class="email-icon"> <ion-icon class="icon"name="mail"></ion-icon></div>
               
               <input type="email" name="" id="" placeholder="xxxx@email.com"><br>
-              <button type="submit" ><ion-icon class="icon" name="caret-forward"></ion-icon></button>
+              <button type="submit" ><ion-icon class="icon" name="caret-forward" aria-label="newsletter buttton"></ion-icon></button>
             </div>
 
             
@@ -144,9 +144,9 @@
             
           <span>Subscribe to our Newsletter</span>
           <div class="social-icons">
-            <span class="iconify iconify-social" data-icon="entypo-social:linkedin-with-circle"></span>
-            <span class="iconify iconify-social" data-icon="akar-icons:facebook-fill"></span>
-            <span class="iconify iconify-social" data-icon="ant-design:instagram-filled"></span>
+            <span class="iconify iconify-social" data-icon="entypo-social:linkedin-with-circle"  aria-label="linkedin page" onclick="location.href='https://www.facebook.com/houloultn';"></span>
+          <span class="iconify iconify-social" data-icon="akar-icons:facebook-fill" aria-label="facebook page" onclick="location.href='https://www.facebook.com/houloultn';"></span>
+          <span class="iconify iconify-social" data-icon="ant-design:instagram-filled" aria-label="instagram page" onclick="location.href='https://www.linkedin.com/company/houloul/';"></span>
           </div>
         </div>
 
