@@ -1038,10 +1038,10 @@ footer .footer-container h5 {
 }
 
 .main-article {
+  transform: translateY(max(-5%, -5rem));
   background-color: white;
   width: min(80%, 1450px);
   margin: 0 auto;
-  transform: translateY(max(-25%, -30rem));
   padding: 2em;
 }
 .main-article * {
@@ -1066,11 +1066,12 @@ footer .footer-container h5 {
   margin-top: 0rem;
 }
 .main-company .article-p {
-  font-size: 0.45em;
+  font-size: 0.65em;
 }
 
 @media (min-width: 50em) {
   .main-company {
+    transform: translateY(max(-25%, -30rem));
     padding-right: 3.6em;
   }
   .main-company .main-article {

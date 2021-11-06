@@ -18,10 +18,11 @@ $date-color: #8f8f99;
   h1 {
     color: rgb(19, 19, 71);
   }
+  transform: translateY(max(-5%, -5rem));
   background-color: white;
   width: min(80%, 1450px);
   margin: 0 auto;
-  transform: translateY(max(-25%, -30rem));
+
   padding: 2em;
   .article-p {
     font-size: 0.65em;
@@ -39,11 +40,12 @@ $date-color: #8f8f99;
     margin-top: 0rem;
   }
   .article-p {
-    font-size: 0.45em;
+    font-size: 0.65em;
   }
 }
 @media (min-width: 50em) {
   .main-company {
+    transform: translateY(max(-25%, -30rem));
     padding-right: 3.6em;
 
     .main-article {
