@@ -1071,7 +1071,7 @@ footer .footer-container h5 {
 
 @media (min-width: 50em) {
   .main-article {
-    transform: translateY(max(-25%, -30rem));
+    transform: translateY(min(-25%, -30rem));
   }
 
   .main-company {
