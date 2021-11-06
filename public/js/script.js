@@ -59,8 +59,10 @@ setInterval(() => {
 
 /////////////////////////////////////////////////////////
 /*Animation*/
-
-const primaryCta = document.querySelector(".hero-primary-cta");
+let primaryCta = document.querySelector(".hero-primary-cta");
+if (document.URL.includes("/")) {
+  primaryCta = document.querySelector(".main-header");
+}
 const cta = document.querySelector(".animation");
 
 const obs = new IntersectionObserver(
@@ -82,6 +84,7 @@ const obs = new IntersectionObserver(
     rootMargin: "0px",
   }
 );
+
 obs.observe(primaryCta);
 
 ///////////////////////////////////////////////////////////

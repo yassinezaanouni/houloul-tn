@@ -8,7 +8,8 @@
 /************ Animation *****************/
 
 @media (min-width: 50em) {
-  .animation {
+  .animation,
+  .animation2 {
     background-image: url("/assets/imgs/mail.svg");
     background-repeat: no-repeat;
     background-size: 3rem;
@@ -20,9 +21,17 @@
     position: fixed;
     opacity: 0;
     z-index: 99;
-    transform: translateY(-100vh);
 
     box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.1);
+  }
+  .animation {
+    transform: translateY(-100vh);
+  }
+  .animation2 {
+    opacity: 1;
+    bottom: 1.4rem;
+    right: 1.4rem;
+    transition: transform 800ms, opacity 800ms ease-out;
   }
   .cta-animation {
     opacity: 1;
