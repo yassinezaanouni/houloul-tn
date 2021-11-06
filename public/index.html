@@ -427,7 +427,7 @@
         <div class="white-contact">
           <div class="left">
             <h2><span>Contactez nous</span></h2>
-            <form action="" class="contact-form" method="POST" netlify>
+            <form action="" class="contact-form" method="POST" name="contact" netlify>
               <label for="name">Nom</label>
             <input type="text" class="name-email name form-input" name="name" id="name">
 
@@ -435,7 +435,7 @@
             <input type="email" class="name-email email form-input " name="email" id="email">
 
             <label for="message">Message</label>
-            <textarea name="message"  class="message  form-input" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message"  class="message  form-input" id="message" name="message" cols="30" rows="10"></textarea>
             <input type="submit" value="Contact" class="submit" aria-label="submit">
             </form>
           </div>
@@ -495,11 +495,11 @@
         <div class="footer4">
           <h6>Newsletter</h6>
 
-          <form action="" class="newsletter-form"  method="POST" netlify>
+          <form action="" class="newsletter-form"  method="POST" name="newsletter" netlify>
             <div class="newsletter-input">
               <div class="email-icon"> <ion-icon class="icon"name="mail"></ion-icon></div>
               
-              <input type="email" name="" id="" placeholder="xxxx@email.com"><br>
+              <input type="email" name="" id="" name="newsletter-email" placeholder="xxxx@email.com"><br>
               <button type="submit" ><ion-icon class="icon" name="caret-forward" aria-label="newsletter buttton"></ion-icon></button>
             </div>
 

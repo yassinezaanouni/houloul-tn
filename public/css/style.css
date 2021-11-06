@@ -613,6 +613,7 @@ button,
   padding: 0.8em;
 }
 .contact .contact-form textarea {
+  padding: 0.8em;
   resize: none;
 }
 .contact .contact-form .submit {
