@@ -1053,3 +1053,20 @@ footer .footer-container h5 {
 .main-article .article-p {
   font-size: 0.65em;
 }
+
+.main-company {
+  width: min(80%, 1450px);
+  margin: 0 auto;
+  padding: 2em 0;
+  padding-right: 3.6em;
+}
+.main-company h4 {
+  margin-top: 1.4em;
+}
+.main-company h4:nth-of-type(1) {
+  margin-top: 0rem;
+}
+.main-company .article-p {
+  text-align: justify;
+  font-size: 0.45em;
+}
