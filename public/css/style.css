@@ -68,6 +68,11 @@ section,
   padding: 4.8rem 0;
 }
 
+h1 {
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
 .hero {
   height: max(70vh, 40rem);
   width: min(80%, 1450px);
@@ -159,7 +164,7 @@ header nav a {
 }
 
 .main-nav {
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo img {
@@ -178,7 +183,7 @@ header nav a {
   display: block;
   background: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 .mobile-menu {
@@ -200,7 +205,7 @@ header nav a {
     background-color: #03154a;
     width: 100%;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 2;
     font-size: 2.8rem;
     height: 8rem;
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
@@ -508,6 +513,10 @@ button,
   background-position: top right;
 }
 
+.hero .cta {
+  z-index: 1;
+}
+
 .hero-img {
   position: absolute;
   top: -2rem;
@@ -715,9 +724,6 @@ footer .social-icons .iconify-social {
     font-size: 2.4rem;
   }
 
-  .hero .primary-heading {
-    line-height: 1.2;
-  }
   .hero .hero-content {
     margin-top: 18rem;
     width: 20em;
@@ -994,6 +1000,10 @@ footer .footer-container h5 {
 }
 .blogs-page .snippet-meta {
   margin: 0;
+  font-size: 0.4em;
+}
+.blogs-page .snippet-meta span {
+  color: #41589c;
 }
 .blogs-page .read {
   margin: 1.6rem 0;
@@ -1038,7 +1048,7 @@ footer .footer-container h5 {
 }
 
 .main-article {
-  transform: translateY(max(-5%, -5rem));
+  transform: translateY(-25vh);
   background-color: white;
   width: min(80%, 1450px);
   margin: 0 auto;
@@ -1050,8 +1060,14 @@ footer .footer-container h5 {
 .main-article h1 {
   color: #131347;
 }
-.main-article .article-p {
-  font-size: 0.65em;
+
+.article-title {
+  max-width: 75%;
+}
+
+.article-p {
+  margin-top: 0;
+  font-size: 1.8rem;
 }
 
 .main-company {
@@ -1059,25 +1075,37 @@ footer .footer-container h5 {
   margin: 0 auto;
   padding: 2em 0;
 }
-.main-company h4 {
+.main-company .article-figure {
+  margin-top: 1.2em;
+}
+.main-company h5 {
   margin-top: 1.4em;
 }
 .main-company h4:nth-of-type(1) {
   margin-top: 0rem;
 }
-.main-company .article-p {
-  font-size: 0.65em;
+.main-company .solutions {
+  margin-top: 2.4rem;
+}
+.main-company .solutions img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.15em;
 }
 
 @media (min-width: 50em) {
-  .main-article {
-    transform: translateY(min(-25%, -30rem));
-  }
-
   .main-company {
-    padding-right: 3.6em;
+    padding-right: 4em;
+    padding-left: 4em;
   }
-  .main-company .main-article {
+  .main-company .article-p {
     text-align: justify;
+  }
+  .main-company .solutions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 1.8em;
+         column-gap: 1.8em;
   }
 }

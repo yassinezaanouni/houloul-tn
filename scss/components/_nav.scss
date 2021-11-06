@@ -24,7 +24,7 @@ header {
   }
 }
 .main-nav {
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo img {
@@ -41,7 +41,7 @@ header {
   display: block;
   background: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .mobile-menu {
   border: none;
@@ -61,7 +61,7 @@ header {
     width: 100%;
 
     justify-content: space-around;
-    z-index: 1;
+    z-index: 2;
     font-size: 2.8rem;
     height: 8rem;
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);

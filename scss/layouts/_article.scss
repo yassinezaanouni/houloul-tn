@@ -18,40 +18,54 @@ $date-color: #8f8f99;
   h1 {
     color: rgb(19, 19, 71);
   }
-  transform: translateY(max(-5%, -5rem));
+  transform: translateY(-25vh);
   background-color: white;
   width: min(80%, 1450px);
   margin: 0 auto;
 
   padding: 2em;
-  .article-p {
-    font-size: 0.65em;
-  }
+}
+.article-title {
+  max-width: 75%;
+}
+.article-p {
+  margin-top: 0;
+  font-size: 1.8rem;
 }
 
 .main-company {
+  .article-figure {
+    margin-top: 1.2em;
+  }
   width: min(80%, 1450px);
   margin: 0 auto;
   padding: 2em 0;
-  h4 {
+  h5 {
     margin-top: 1.4em;
   }
   h4:nth-of-type(1) {
     margin-top: 0rem;
   }
-  .article-p {
-    font-size: 0.65em;
+  .solutions {
+    margin-top: 2.4rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.15em;
+    }
   }
 }
 @media (min-width: 50em) {
-  .main-article {
-    transform: translateY(min(-25%, -30rem));
-  }
   .main-company {
-    padding-right: 3.6em;
-
-    .main-article {
+    padding-right: 4em;
+    padding-left: 4em;
+    .article-p {
       text-align: justify;
+    }
+    .solutions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1.8em;
     }
   }
 }

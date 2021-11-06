@@ -76,6 +76,11 @@
 //   top: 0px;
 // }
 
+.hero {
+  .cta {
+    z-index: 1;
+  }
+}
 .hero-img {
   position: absolute;
   top: -2rem;
@@ -298,9 +303,6 @@ footer {
   // Logo and everything in hero will adapt to font-size
 
   .hero {
-    .primary-heading {
-      line-height: 1.2;
-    }
     .hero-content {
       margin-top: 18rem;
 

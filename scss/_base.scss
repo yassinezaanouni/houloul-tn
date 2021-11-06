@@ -70,7 +70,10 @@ section,
 .footer-container {
   padding: 4.8rem 0;
 }
-
+h1 {
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .hero {
   //padding-bottom: 16rem;
   height: max(70vh, 40rem);

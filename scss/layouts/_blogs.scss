@@ -2,7 +2,7 @@
 @use "../components/nav" as *;
 @use "../components/buttons" as *;
 
-$date-color: #8f8f99;
+$name-color: #41589c;
 
 .blogs-page {
   width: min(80%, 1450px);
@@ -28,6 +28,10 @@ $date-color: #8f8f99;
   }
   .snippet-meta {
     margin: 0;
+    font-size: 0.4em;
+    span {
+      color: $name-color;
+    }
   }
   .read {
     margin: 1.6rem 0;

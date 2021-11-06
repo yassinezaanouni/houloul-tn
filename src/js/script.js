@@ -14,10 +14,10 @@ const adnp = document.getElementById("adn-p");
 
 let i = 1;
 const adnObject = {
-  0: "Chez Houloul, chaque membre de notre équipe a développé un degré de créativité, d’innovation et de leadership hors pair tout au long de son expérience et ce, depuis son plus jeune âge. Ces compétences sont renforcées par des études supérieures approfondies et diverses dans ",
+  0: "Chez Houloul, chaque membre de notre équipe a développé un degré de créativité, d’innovation et de leadership hors pair tout au long de son expérience et ce, depuis son plus jeune âge. Ces compétences sont renforcées par des études supérieures approfondies et diverses dans des universités renommées à l’échelle internationale et des expériences professionnelles multi-sectorielles à l’échelle mondiale. ",
   1: "Créativité et innovation sont les compétences majeures qui définissent notre équipe.  Une équipe qui ne cessent de s’améliorer afin d’apporter les meilleures solutions aux problèmes, éliminer les obstacles et développer le tissu entrepreneurial.",
-  2: "Houloul est un cabinet de Management as a Service et Management Consulting. Nous proposons non seulement des recommandations, des stratégies et des plans d’actions personnalisés, mais surtout ...",
-  3: "Notre ambition est de construire un monde meilleur avec une qualité de service proactive et personnalisée basée sur la confiance et la fiabilité de tous les acteurs. Pour ce faire, nous mettons en ..",
+  2: "Houloul est un cabinet de Management as a Service et Management Consulting. Nous proposons non seulement des recommandations, des stratégies et des plans d’actions personnalisés, mais surtout de l’accompagnement afin de mettre en oeuvre ces derniers et vous aider à prendre les meilleures décisions. ",
+  3: "Quel que soit la situation de votre entreprise, Houloul sera toujours à votre service et vous offre des solutions pluridisciplinaires, agiles et personnalisées.Vous cherchez de l’aide à la prise de décision ? A la création d’une stratégie et sa mise en exécution ? de l'accompagnement professionnel? Ou tout simplement un manager compétant à temps partiel ? ",
 };
 setInterval(() => {
   adnp.innerHTML = adnObject[i];
