@@ -40,7 +40,13 @@ $date-color: #8f8f99;
     margin-top: 0rem;
   }
   .article-p {
-    text-align: justify;
     font-size: 0.45em;
+  }
+}
+@media (min-width: 50em) {
+  .main-company {
+    .main-article {
+      text-align: justify;
+    }
   }
 }
