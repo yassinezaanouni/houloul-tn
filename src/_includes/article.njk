@@ -2,14 +2,17 @@
 layout: "base.njk"
 ---
 
+<div class="article-img-container">
+  <img class="article-img" src="{{ image }}" alt="{{ imageAlt }}}" />
+</div>
 <article class="main-article">
   <h1 class="article-titile">{{ title }}</h1>
   <figure class="article-figure">
-    <img src="{{ image }}" alt="{{ imageAlt }}}" />
     <figcaption>
       {{ imageAlt }}
     </figcaption>
   </figure>
-
-  {{ content | safe }}
+  <p class="article-p">
+    {{ content | safe }}
+  </p>
 </article>

@@ -1,0 +1,29 @@
+@use "../base" as *;
+@use "../components/nav" as *;
+@use "../components/buttons" as *;
+
+$date-color: #8f8f99;
+
+.article-img {
+  object-fit: cover;
+
+  max-height: 80rem;
+  width: 100vw;
+}
+
+.main-article {
+  * {
+    color: #333;
+  }
+  h1 {
+    color: rgb(19, 19, 71);
+  }
+  background-color: white;
+  width: min(80%, 1450px);
+  margin: 0 auto;
+  transform: translateY(max(-25%, -30rem));
+  padding: 2em;
+  .article-p {
+    font-size: 0.65em;
+  }
+}
