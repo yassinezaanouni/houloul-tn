@@ -59,34 +59,33 @@ setInterval(() => {
 
 /////////////////////////////////////////////////////////
 /*Animation*/
-let primaryCta = document.querySelector(".hero-primary-cta");
 if (document.URL.includes("/")) {
-  primaryCta = document.querySelector(".main-header");
+  let primaryCta = document.querySelector(".hero-primary-cta");
+
+  const cta = document.querySelector(".animation");
+
+  const obs = new IntersectionObserver(
+    function (entries) {
+      const ent = entries[0];
+
+      if (ent.isIntersecting === false) {
+        cta.classList.add("cta-animation");
+      }
+
+      if (ent.isIntersecting === true) {
+        cta.classList.remove("cta-animation");
+      }
+    },
+    {
+      // In the viewport
+      root: null,
+      threshold: 0,
+      rootMargin: "0px",
+    }
+  );
+
+  obs.observe(primaryCta);
 }
-const cta = document.querySelector(".animation");
-
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-
-    if (ent.isIntersecting === false) {
-      cta.classList.add("cta-animation");
-    }
-
-    if (ent.isIntersecting === true) {
-      cta.classList.remove("cta-animation");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "0px",
-  }
-);
-
-obs.observe(primaryCta);
-
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
