@@ -1097,6 +1097,7 @@ footer .footer-container h5 {
 }
 .main-company .solutions img {
   width: 100%;
+  max-width: 300rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.15em;
