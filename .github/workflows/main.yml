@@ -1,0 +1,15 @@
+name: Deploy website
+on:
+  schedule:
+    # Every day at midnight
+    # If you're also puzzled by 
+    # the cron syntax check
+    # -> https://crontab.guru
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    name: Netlify Midnight Cron
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/618bd8d0a3e26f2ed5d1cf51
