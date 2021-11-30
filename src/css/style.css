@@ -978,7 +978,7 @@ footer .footer-container h5 {
 
   .cta-animation {
     opacity: 1;
-    transform: translateX(85vw);
+    transform: translateX(82.5vw);
   }
 }
 @media (min-width: 105em) {
